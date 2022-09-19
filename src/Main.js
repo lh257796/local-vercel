@@ -15,7 +15,7 @@ const Main = () => {
         We know you will truly love the experience. Make health as painless as using SQL
         without Sequelize. With Apple iHealthcare, you can even center divs. That's fucking right.
       </p>
-      <p>
+      <div>
         Apple iHealthcare has you covered. Ask yourself: what can Apple iHealthcare do for
         me?
         <ul>
@@ -33,7 +33,7 @@ const Main = () => {
             HIPPA policy in the handbook? You don't need to ask us twice!
           </li>
         </ul>
-      </p>
+      </div>
       <em>
         <h5>It's time to go Green. Go to the Next Level. Go Lang.</h5>{" "}
         <h4>
@@ -47,11 +47,12 @@ const Main = () => {
         turquoise-laden surgical team taken from an exceptionally awkward angle.
         Here at Apple iHealthcare, we give you what you want, AND MORE.
       </em>
-      <hr/>
+      </p>
+      <p>
         <img src={process.env.PUBLIC_URL + "/pic2.jpeg"} alt="Get_fucked" />
         {/* <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Get_fucked"/> */}
       </p>
-      <p>
+
         Next time you think about hospitals, stethoscopes, diabetus, scurvy or dirty syringes,
         we hope you can think of us instead. Enjoy the following misunderstood benefits:
         <ul>
@@ -63,7 +64,7 @@ const Main = () => {
         <h3>Our team is happy to help you wherever, whenever, whatever, whomever, whyever. Apple iHealthcare </h3>
 
         <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Get_fucked" />
-      </p>
+
     </div>
   );
 };
