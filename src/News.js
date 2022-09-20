@@ -29,7 +29,7 @@ const News = () => {
         <div>
             <h3>Regularly Updated Zero-Bias 100% Legit Health News (sponsored by Reddit APIs)</h3>
             <h4><em>Taken from /r/science sorted by Health flair</em></h4>
-            <ul>
+            <ol>
                 {
                     news.map(post => {
                         return (
@@ -46,7 +46,7 @@ const News = () => {
                         )
                     })
                 }
-            </ul>
+            </ol>
         </div>
     )
 }
