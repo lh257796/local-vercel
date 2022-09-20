@@ -6,6 +6,7 @@ import { fetchPatients } from "./store";
 const Patients = () => {
   const { patients } = useSelector((state) => state);
   const dispatch = useDispatch();
+  console.log(patients);
 
   return (
         <ul>
