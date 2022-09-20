@@ -18,9 +18,17 @@ const providers = (state = [], action) => {
     return state
 }
 
+const news = (state= [], action) => {
+    if (action.type === 'SET_NEWS') {
+        state = action.news
+    }
+    return state
+}
+
 const reducer = combineReducers({
     patients,
-    providers
+    providers,
+    news
 })
 
 export const fetchPatients = () => {
@@ -33,6 +41,14 @@ export const fetchProviders = () => {
     return async(dispatch) => {
         const {data} = await axios.get('/api/providers');
         dispatch({type: 'SET_PROVIDERS', providers: data})
+    }
+}
+
+export const fetchNews = () => {
+    return async(dispatch) => {
+        const res = await axios.get('https://www.reddit.com/r/science/hot.json?f=flair_name%3A%22Health%22')
+        const data = res.data.data.children
+        dispatch({type: 'SET_NEWS', news: data})
     }
 }
 
