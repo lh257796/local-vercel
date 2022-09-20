@@ -24,8 +24,10 @@ const News = () => {
                     news.map(post => {
                         return (
                             <li key = {post.id}>
-                                <strong>{post.data.title}</strong> {<br/>}
-                                <small> <a href ={post.data.url}>{post.data.url}</a></small> {<br/>}
+
+                                <strong><a href ={post.data.url}>{post.data.title}</a></strong> {<br/>}{<br/>}
+                                <img className='.img' src={post.data.thumbnail} alt=' (Oops! Could not find thumbnail)'></img> {<br/>}
+                                <em><small> Sourced from: {post.data.domain}</small></em> {<br/>}
                                 <small>Upvotes: {post.data.score}</small> {<br/>}
                                 <small>Comments: {post.data.num_comments}</small> {<br/>}
                                 <small><em>permalink: {post.data.permalink}</em></small>

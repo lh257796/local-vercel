@@ -49,7 +49,7 @@ const Main = () => {
       </em>
       </p>
       <p>
-        <img src={process.env.PUBLIC_URL + "/pic2.jpeg"} alt="Doctor Time Baby" />
+        <img className="image" src={process.env.PUBLIC_URL + "/pic2.jpeg"} alt="Doctor Time Baby" />
         {/* <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Get_fucked"/> */}
       </p>
 
@@ -63,7 +63,7 @@ const Main = () => {
 
         <h3>Our team is happy to help you wherever, whenever, whatever, whomever, whyever. Apple iHealthcare </h3>
 
-        <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Cameras belong at the waist" />
+        <img className="image" src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Cameras belong at the waist" />
 
     </div>
   );
