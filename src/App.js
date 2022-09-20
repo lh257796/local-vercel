@@ -7,7 +7,7 @@ import Providers from "./Providers";
 import News from "./News";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { fetchPatients } from "./store";
+import { fetchPatients, fetchProviders } from "./store";
 
 const App = () => {
   const { pathname } = useLocation();
@@ -15,6 +15,7 @@ const App = () => {
 
   useEffect(() => {
     dispatch(fetchPatients());
+    dispatch(fetchProviders());
   }, [dispatch]);
 
 

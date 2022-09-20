@@ -12,9 +12,15 @@ const Patients = () => {
             {
                 patients.map(pt => {
                     return (
-                        <li key = {pt.id} className = 'patientCard'>
-                            Name: {pt.name} {<br/>} Age: {pt.age}
+                      <div key={pt.id} className='patientCard'>
+                        <li key = {pt.id} className = 'container'>
+                            <strong>Name:</strong> {pt.name} {<br/>}
+                            <strong>Age:</strong> {pt.age} {<br/>}{<br/>}
+                            <strong>History of Present Illness:</strong> {pt.HPI} {<br/>}{<br/>}
+                            <strong>Medical history:</strong> {pt.hx} <br/>
                         </li>
+                        <hr/>
+                      </div>
                     )
                 })
             }

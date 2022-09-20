@@ -29,6 +29,12 @@ export const fetchPatients = () => {
         dispatch({type: 'SET_PATIENTS', patients: data})
     }
 }
+export const fetchProviders = () => {
+    return async(dispatch) => {
+        const {data} = await axios.get('/api/providers');
+        dispatch({type: 'SET_PROVIDERS', providers: data})
+    }
+}
 
 const store = createStore(reducer, applyMiddleware(thunk, logger));
 

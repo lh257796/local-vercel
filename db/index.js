@@ -1,5 +1,5 @@
 const Sequelize = require('sequelize');
-const {UUID, UUIDV4, STRING, INTEGER} = Sequelize
+const {UUID, UUIDV4, STRING, INTEGER, TEXT} = Sequelize
 const conn = new Sequelize(process.env.DATABASE_URL || 'postgres://localhost/vercel-demo-db')
 
 const Patient = conn.define('patient', {
@@ -17,7 +17,14 @@ const Patient = conn.define('patient', {
     },
     age: {
         type: INTEGER,
-        }
+    },
+    HPI: {
+        type: TEXT
+    },
+    hx: {
+        type: TEXT
+    }
+
 })
 
 const Provider = conn.define('provider', {
@@ -39,6 +46,9 @@ const Provider = conn.define('provider', {
         validate: {
             notEmpty: true
         }
+    },
+    about: {
+        type: TEXT
     }
 })
 

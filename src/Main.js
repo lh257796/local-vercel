@@ -49,21 +49,21 @@ const Main = () => {
       </em>
       </p>
       <p>
-        <img src={process.env.PUBLIC_URL + "/pic2.jpeg"} alt="Get_fucked" />
+        <img src={process.env.PUBLIC_URL + "/pic2.jpeg"} alt="Doctor Time Baby" />
         {/* <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Get_fucked"/> */}
       </p>
 
         Next time you think about hospitals, stethoscopes, diabetus, scurvy or dirty syringes,
         we hope you can think of us instead. Enjoy the following misunderstood benefits:
         <ul>
-            <li><strong>Going to receive a vasectomy anyways? Apply now and receive a BONUS pap smear during the same operation! </strong><br/> <small><em>Promotion is limited to one per customer.</em></small>  </li>
-            <li><strong>Want a regular check-up for your two prepubescent children? Order today for colonoscopy referral for whichever family member of your choosing!</strong> <br/> <small><em>We are not responsible for any forms of familial discord that erupts when you try to get your father-in-law a rectal exam</em></small>  </li>
-            <li><strong>Need a quick pick-me-up OTC for your seasonal allergies, cold, or flu? We have experimental monoclonal antibody angiotensin converting enzyme inhibitor antibiotic agents for NEW customers only!</strong><br/> <small><em>We do not take any liability for inevitable instances of iatrogenic MRSA.</em></small>  </li>
+            <li><strong>Going to receive a vasectomy anyways? Apply now and receive a BONUS pap smear during the same operation for FREE! </strong><br/> <small><em>Promotion is limited to one per customer.</em></small>  </li>
+            <li><strong>Want a regular check-up for both your son and mother? Sign up today to gift a 50% off colonoscopy referral for whichever family member of your choosing!</strong> <br/> <small><em>We are not responsible for any forms of familial discord that erupts when you try to gift your father-in-law a rectal exam</em></small>  </li>
+            <li><strong>Need a quick pick-me-up OTC for your seasonal allergies, cold, or flu? We have experimental monoclonal antibody angiotensin converting enzyme inhibitor antibiotics for NEW customers only!</strong><br/> <small><em>We do not take any liability for inevitable instances of iatrogenic MRSA and eventual death.</em></small>  </li>
         </ul>
 
         <h3>Our team is happy to help you wherever, whenever, whatever, whomever, whyever. Apple iHealthcare </h3>
 
-        <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Get_fucked" />
+        <img src={process.env.PUBLIC_URL + "/pic1.jpeg"} alt="Cameras belong at the waist" />
 
     </div>
   );
