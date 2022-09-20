@@ -8,7 +8,7 @@ const Providers = () => {
     return (
         <ul>
             {
-                providers.map(provider => {
+                providers?.map(provider => {
                     return (
                         <div key = {provider.id} className = 'patientCard'>
                         <li key = {provider.id} className = 'container'>

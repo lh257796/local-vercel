@@ -8,10 +8,12 @@ const Patients = () => {
   const dispatch = useDispatch();
   console.log(patients);
 
+  //Always put a ? in a array.map thing, ie: (array)?.map
+
   return (
         <ul>
             {
-                patients.map(pt => {
+                patients?.map(pt => {
                     return (
                       <div key={pt.id} className='patientCard'>
                         <li key = {pt.id} className = 'container'>
