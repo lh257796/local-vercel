@@ -26,7 +26,6 @@ const reducer = combineReducers({
 export const fetchPatients = () => {
     return async(dispatch) => {
         const {data} = await axios.get('/api/patients');
-        console.log(data);
         dispatch({type: 'SET_PATIENTS', patients: data})
     }
 }

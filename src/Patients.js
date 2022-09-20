@@ -8,22 +8,18 @@ const Patients = () => {
   const dispatch = useDispatch();
 
   return (
-    <>
-    {console.log('Debug-Patients: ',patients)}
-    </>
-    //     <ul>
-    //         {
-    //             patients.map(pt => {
-    //                 return (
-    //                     <li key = {pt.id} >
-    //                         Name: {pt.name} {<br/>} Age: {pt.age}
-    //                     </li>
-    //                 )
-    //             })
-    //         }
-    //     </ul>
-    // )
-  );
+        <ul>
+            {
+                patients.map(pt => {
+                    return (
+                        <li key = {pt.id} className = 'patientCard'>
+                            Name: {pt.name} {<br/>} Age: {pt.age}
+                        </li>
+                    )
+                })
+            }
+        </ul>
+    )
 };
 
 export default Patients;

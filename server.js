@@ -34,8 +34,6 @@ app.use('/', async(error, req,res,next) => {
     }
 })
 
-const port = process.env.PORT || 3001
-
 const init = async() => {
     try{
         await conn.sync({force: true});
@@ -47,7 +45,7 @@ const init = async() => {
             Provider.create({name: 'Zeta', specialty: 'radiology fellow'}),
             Provider.create({name: 'Mu', specialty: 'intern of an internist'})
         ]);
-        app.listen(port, () => console.log(`listening on port ${port}`))
+        app.listen(5000, () => console.log(`listening on port 5000`))
     }
         catch(e){
             console.log(e)
