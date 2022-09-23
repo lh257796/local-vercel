@@ -33,13 +33,13 @@ const reducer = combineReducers({
 
 export const fetchPatients = () => {
     return async(dispatch) => {
-        const {data} = await axios.get('/api/patients');
+        const {data} = await axios.get('API_BASE_URL/api/patients');
         dispatch({type: 'SET_PATIENTS', patients: data})
     }
 }
 export const fetchProviders = () => {
     return async(dispatch) => {
-        const {data} = await axios.get('/api/providers');
+        const {data} = await axios.get('API_BASE_URL/api/providers');
         dispatch({type: 'SET_PROVIDERS', providers: data})
     }
 }

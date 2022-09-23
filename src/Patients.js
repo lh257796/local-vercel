@@ -5,8 +5,9 @@ import { fetchPatients } from "./store";
 
 const Patients = () => {
   const { patients } = useSelector((state) => state);
+
   const dispatch = useDispatch();
-  console.log(patients);
+  console.log('patients here: ',patients);
 
   //Always put a ? in a array.map thing, ie: (array)?.map
 
