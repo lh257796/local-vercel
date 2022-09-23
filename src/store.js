@@ -43,7 +43,7 @@ export const fetchPatients = () => {
 export const fetchProviders = () => {
     return async(dispatch) => {
         // const {data} = await axios.get('process.env.API_BASE_URL + '/api/providers'');
-        const {data} = await axios.get('https://apple-health-backend.herokuapp.com/api/patients');
+        const {data} = await axios.get('https://apple-health-backend.herokuapp.com/api/providers');
         dispatch({type: 'SET_PROVIDERS', providers: data})
     }
 }
