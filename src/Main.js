@@ -4,7 +4,7 @@ const Main = () => {
   return (
     <div>
       <h2>Welcome to the Premiere Reveal of Apple iHealthcare</h2>
-
+      {console.log('ATTEMPTING ... : ',process.env.API_BASE_URL)}
       <p>
         We know it's a mouthful. Introducing: the all new, improved, efficient,
         clean, gluten-free, no greenhouse gas, vegetarian, GMO-free organic bona
